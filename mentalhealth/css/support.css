@@ -1,0 +1,114 @@
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.community-header {
+    background-color: #c0392b;
+    animation: fadeInDown 1s ease-out;
+}
+.community-header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.community-header p {
+    font-size: 1.1rem;
+}
+
+/* Community Forum Section */
+.community-forum {
+    animation: fadeInUp 1s ease-in-out;
+}
+.forum-post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.forum-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.forum-post .post-header h5 {
+    font-size: 1.5rem;
+    color: #c0392b;
+}
+.forum-post .author {
+    font-size: 1rem;
+    color: #888;
+}
+.forum-post .post-body {
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+.forum-post button {
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+.forum-post button:hover {
+    background-color: #e74c3c;
+}
+
+/* Join Community Section */
+.join-community {
+    background-color: #f39c12;
+    color: white;
+}
+.join-community h3 {
+    font-size: 2rem;
+    color: #c0392b;
+}
+.join-community p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+.join-community button {
+    background-color: #c0392b;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.join-community button:hover {
+    background-color: #e74c3c;
+}
+
+/* Footer */
+.footer {
+    background-color: #c0392b;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .community-header h1 {
+        font-size: 2.5rem;
+    }
+    .join-community h3 {
+        font-size: 1.8rem;
+    }
+}

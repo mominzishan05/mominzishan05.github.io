@@ -1,0 +1,64 @@
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.reminder-header {
+    background-color: #c0392b;
+    animation: fadeInDown 1s ease-out;
+}
+.reminder-header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.reminder-header p {
+    font-size: 1.1rem;
+}
+
+/* Reminder Form */
+.reminder-form-section {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Alert Box */
+.alert {
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    transition: transform 0.3s ease;
+}
+#dismissAlert {
+    margin-top: 10px;
+    background-color: #c0392b;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: #c0392b;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .reminder-header h1 {
+        font-size: 2.5rem;
+    }
+}

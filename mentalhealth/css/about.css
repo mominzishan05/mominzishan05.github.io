@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Section */
+  .about-header {
+    background-color: #c0392b;
+    padding: 60px 20px;
+  }
+  .about-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .about-header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Content Section */
+  .about-section h2 {
+    color: #c0392b;
+    font-weight: 700;
+  }
+  .about-section ul {
+    padding-left: 20px;
+  }
+  .about-section ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Team Cards */
+  .team-card {
+    background-color: #ffeaea;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+  .team-card:hover {
+    transform: scale(1.05);
+    background-color: #fdd;
+  }
+  .team-card h5 {
+    color: #c0392b;
+    font-weight: bold;
+  }
+  .team-card p {
+    margin-bottom: 0;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #c0392b;
+    color: white;
+  }
+
+  /* nav */
+  /* General Navbar Styling */
+.navbar {
+    font-family: 'Arial', sans-serif;
+    background-color: #c0392b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: sticky;  /* ✅ Sticky banata hai */
+    top: 0;            /* ✅ Page ke top pe chipka rahega */
+    z-index: 1000;     /* ✅ Scroll ke time aur content ke upar rahe */
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f1c40f; /* Light yellow color on hover */
+    transform: scale(1.1); /* Scale up effect */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: white;
+}
+
+.btn-light {
+    background-color: white;
+    color: #c0392b;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-light:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: scale(1.1); /* Scale up effect on hover */
+}
+
+/* Animation for the navbar */
+.animated-navbar {
+    animation: fadeInNavbar 1s ease-in-out;
+}
+
+@keyframes fadeInNavbar {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

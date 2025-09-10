@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progress Report | V-CARE</title>
+  <link rel="stylesheet" href="/css/progress.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="progress-header text-white text-center py-5">
+    <div class="container">
+      <h1>📈 Progress Report</h1>
+      <p>Your emotional growth at a glance. Keep going, you're doing great! 💪</p>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section class="summary-section text-center py-4">
+    <div class="container">
+      <h3 class="text-danger mb-3">This Week's Overview</h3>
+      <p class="lead">Visualize your emotional patterns and journal consistency. Use this report to reflect and realign. 🌿</p>
+    </div>
+  </section>
+
+  <!-- Graph -->
+  <section class="graph-section py-5 bg-light">
+    <div class="container">
+      <canvas id="progressChart" height="300"></canvas>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlight-section text-center py-5">
+    <div class="container">
+      <h4 class="mb-4 text-danger">Weekly Highlights</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="highlight-box p-3 shadow-sm rounded">
+            <h5>Top Mood</h5>
+            <p>😊 Happy</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="highlight-box p-3 shadow-sm rounded">
+            <h5>Journal Streak</h5>
+            <p>6 Days Logged</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="highlight-box p-3 shadow-sm rounded">
+            <h5>Calmest Day</h5>
+            <p>Friday – Full of mindfulness ✨</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center text-white py-3">
+    <p>&copy; 2025 V-CARE | Reflect. Grow. Heal. ❤️</p>
+  </footer>
+
+  <script src="/js/progress.js"></script>
+</body>
+</html>

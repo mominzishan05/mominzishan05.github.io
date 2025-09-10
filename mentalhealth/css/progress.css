@@ -1,0 +1,50 @@
+body {
+    background-color: #fff8f8;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  .progress-header {
+    background-color: #c0392b;
+    /* animation: fadeInDown 1s ease-out; */
+    /* border: 3px solid; */
+  }
+  .progress-header h1 {
+    font-size: 3rem;
+  }
+  .progress-header p {
+    font-size: 1.1rem;
+  }
+  
+  /* Sections */
+  .summary-section, .highlight-section {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .highlight-box {
+    background-color: #ffffff;
+    border: 2px solid #c0392b;
+    /* transition: transform 0.3s ease; */
+  }
+  .highlight-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #c0392b;
+    color: white;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

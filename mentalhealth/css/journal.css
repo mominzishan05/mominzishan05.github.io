@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  .journal-header {
+    background-color: #c0392b;
+    padding: 60px 20px;
+    animation: fadeInDown 1s ease-out;
+  }
+  .journal-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .journal-header p {
+    font-size: 1.1rem;
+  }
+  
+  /* Journal Form */
+  .journal-form-section {
+    padding: 40px 20px;
+    background-color: #fff0f0;
+    min-height: 80vh;
+  }
+  .form-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  textarea, select, input[type="date"] {
+    border: 2px solid #c0392b;
+  }
+  
+  /* Log Section */
+  .journal-log-section {
+    padding: 40px 0;
+    background-color: #fff8f8;
+  }
+  .list-group-item {
+    background-color: #ffffff;
+    border-left: 5px solid #c0392b;
+    animation: fadeInEntry 0.5s ease-out;
+    margin-bottom: 12px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #c0392b;
+    color: white;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInEntry {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-light-danger {
+    background-color: white;
+    color: red;
+    border-color: red;
+  }
+  
+  .btn-light-danger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    transition: left 0.4s ease;
+    z-index: 0;
+  }
+  
+  .btn-light-danger:hover::before {
+    left: 0;
+  }
+  
+  .btn-light-danger:hover {
+    color: white;
+    border-color: red;
+  }
+  
+  .btn-light-danger span {
+    position: relative;
+    z-index: 1;
+  }
+  

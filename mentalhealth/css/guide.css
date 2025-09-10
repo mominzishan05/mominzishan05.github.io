@@ -1,0 +1,102 @@
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.guide-header {
+    background-color: #c0392b;
+    animation: fadeInDown 1s ease-out;
+}
+.guide-header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.guide-header p {
+    font-size: 1.2rem;
+}
+
+/* Guide Section */
+.guide-content {
+    animation: fadeInUp 1s ease-in-out;
+}
+.guide-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.guide-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.guide-box h5 {
+    color: #c0392b;
+}
+.guide-box p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* Exercise Section */
+.exercise-content {
+    background-color: #f5f5f5;
+    animation: fadeInUp 1s ease-in-out;
+}
+.exercise-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.exercise-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.exercise-box h5 {
+    color: #c0392b;
+}
+.exercise-box p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #c0392b;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .guide-header h1 {
+        font-size: 2.5rem;
+    }
+    .guide-header p {
+        font-size: 1rem;
+    }
+    .guide-box, .exercise-box {
+        padding: 15px;
+    }
+    .footer p {
+        font-size: 0.9rem;
+    }
+}

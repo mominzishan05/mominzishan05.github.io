@@ -1,0 +1,74 @@
+/* Page background */
+body {
+    background-color: #ffebeb; /* Light Red */
+}
+
+/* Card header style */
+.card-header {
+    background-color: #e63946; /* Red */
+    color: white;
+}
+
+/* Card body style */
+.card-body {
+    background-color: #e63946;
+}
+
+/* Card footer style */
+.card-footer {
+    background-color: #f1f1f1;
+}
+
+/* Table styles */
+table {
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: center;
+    color: #333; /* Dark text for contrast */
+}
+
+/* Graph container style */
+.graph-container {
+    margin-top: 40px;
+}
+
+/* General card style */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button style - if any button is there */
+.btn {
+    background-color: #e63946; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #d62828; /* Slightly darker red for hover effect */
+}
+
+/* Heading styles */
+h2 {
+    color: #e63946; /* Red */
+}
+
+/* Paragraph text style */
+p {
+    color: #333; /* Dark gray text for readability */
+}
+
+/* Links (if any) */
+a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

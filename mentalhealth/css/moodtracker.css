@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tracker-header {
+    background-color: #c0392b;
+    padding: 60px 20px;
+    animation: fadeInDown 1s ease-out;
+  }
+  .tracker-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .tracker-header p {
+    font-size: 1.2rem;
+  }
+  
+  .mood-section {
+    padding: 40px 0;
+  }
+  .mood-section h2 {
+    color: #c0392b;
+    margin-bottom: 20px;
+  }
+  .mood-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .mood-card {
+    font-size: 2.5rem;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #c0392b;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 100px;
+    text-align: center;
+  }
+  .mood-card span {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  .mood-card:hover {
+    transform: scale(1.1);
+    background-color: #ffeaea;
+  }
+  
+  .form-section {
+    background-color: #fff;
+    padding: 30px 0;
+  }
+  textarea {
+    border: 2px solid #c0392b;
+  }
+  
+  .log-section h3 {
+    color: #c0392b;
+  }
+  .list-group-item {
+    border-left: 5px solid #c0392b;
+    background-color: #fff;
+    margin-bottom: 10px;
+    animation: fadeInUp 0.6s ease-in;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #c0392b;
+    color: white;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
