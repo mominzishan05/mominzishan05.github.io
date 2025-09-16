@@ -441,53 +441,6 @@ body {
   }
 }
 
-@media (max-width: 425px) {
-  .contactup {
-    font-size: 24px;
-  }
-  .contactup::before {
-    font-size: 50px;
-  }
-  .shybox {
-    font-size: 18px;
-  }
-  .freebox {
-    font-size: 13px;
-  }
-  .namebox input,
-  .mailboxes input,
-  .subjectsbox input {
-    height: 40px;
-    font-size: 13px;
-  }
-  .messagebox textarea {
-    font-size: 13px;
-    padding: 8px;
-  }
-  .svgone {
-    height: 30px;
-    width: 30px;
-  }
-  .msgbutton-wrapper {
-    width: 50%;
-    margin-bottom: 55px;
-  }
-  .msgbutton {
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .msgbutton-text-initial {
-    font-size: 13px;
-    padding: 0 8px;
-  }
-  .msgbutton-icon {
-    width: 50px;
-    height: 50px;
-    margin-left: 8px;
-  }
-}
-
-
 
 
 
@@ -512,3 +465,7 @@ body {
     margin-bottom: 0; /* row me align karna */
   }
 }
+
+
+
+
