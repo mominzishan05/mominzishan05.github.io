@@ -278,3 +278,68 @@
         padding-bottom: 80px; /* content navbar ke niche na chhup jaye */
       }
     }
+
+
+    /*  responsive for mobile  */
+       @media (max-width: 375px) {
+      .maincontainer {
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .imgbox img {
+        width: 220px;
+        height: 230px;
+        border-radius: 50%;
+      }
+
+      .linecomponents {
+        display: none;
+      }
+
+      .containbox h1 {
+        font-size: 28px;
+        justify-content: center;
+      }
+
+      .containbox h2 {
+        font-size: 26px;
+        margin: 0;
+      }
+
+      .containbox p {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      /* Navbar bottom for mobile */
+      .navcontainer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        right: 0;
+        transform: none;
+        background: #fff;
+        border-top: 2px solid #ddd;
+        padding: 10px;
+      }
+
+      .circle-wrapper {
+        margin-bottom: 0;
+      }
+
+      .reveal-text {
+        display: none; /* mobile pe text hide */
+      }
+
+      body {
+        padding-bottom: 80px; /* content navbar ke niche na chhup jaye */
+      }
+    }

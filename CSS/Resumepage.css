@@ -50,6 +50,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s;
+  text-decoration: none;
   border: 2px solid orange;
 }
 .print-btn:hover {
